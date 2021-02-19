@@ -4,9 +4,9 @@ Neste tutorial você irá projetar um circuito combinacional de três entradas e
 
 O procedimento desta parte será fazer o seguinte:
 
-- Criar um novo projeto
+- Criar um novo projeto no Quartus Prime
 - Adicionar um arquivo Verilog que descreve o circuito
-- Adicionar um arquivo Verilog que fornece as entradas
+- Adicionar um arquivo SystemVerilog que fornece as entradas
 - Simular o circuito
 - Observar as saídas e verificar se elas estão corretas
 
@@ -18,7 +18,7 @@ Crie uma pasta no seu computador onde você irá clonar este repositório. Certi
 - `sim`: diretório onde serão armazenados os arquivos de simulação.
 - `rtl`: diretório onde serão armazenados os arquivos HDL.
 
-Abra o Quartus Prime clicando duas vezes no ícone da sua área de trabalho, ou digitando o comando `quartus &` no termina, e crie um novo projeto usando o _New Project Wizard_.
+Abra o Quartus Prime clicando duas vezes no ícone da sua área de trabalho, ou digitando o comando `quartus &` no terminal, e crie um novo projeto usando o _New Project Wizard_.
 
 ![New Project Wizard](https://github.com/GCET231/tutorial3-simulacao-hdl/blob/main/Quartus-Prime-ModelSim/images/0-new_project.png)
 
