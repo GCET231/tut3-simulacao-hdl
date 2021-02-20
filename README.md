@@ -12,6 +12,7 @@ Existem diversas ferramentas comerciais e _open-source_ para simulação de circ
     <a href="https://github.com/GCET231/tutorial3-simulacao-hdl/tree/main/Quartus-Prime-ModelSim">
       Quartus Prime/ModelSim
     </a>
+    <span> | </span>
     <a href="https://github.com/GCET231/tutorial3-simulacao-hdl/tree/main/ModelSim">
       ModelSim
     </a>
