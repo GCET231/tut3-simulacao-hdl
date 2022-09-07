@@ -3,7 +3,7 @@
 // Universidade Federal do Recôncavo da Bahia
 // -----------------------------------------------------------------------------
 // Author : João Bittencourt
-// File   : fulladder_test.sv
+// File   : halfadder_test.sv
 // Editor : Sublime Text 3, tab size (3)
 // -----------------------------------------------------------------------------
 // Description:
@@ -14,20 +14,20 @@ module halfadder_test();
    logic A;
    logic B;
    logic Cin;
-   wire Sum;
+   wire  Sum;
 
-   halfadder myhalfadder(A, B, Cin, Sum);
+   halfadder myhalfadder (A, B, Cin, Sum);
 
    initial begin
-      // Initialize Inputs
+      // Inicializa as entradas
       A = 0;
       B = 0;
       Cin = 0;
-      // Wait, say, 10 ns before inputs start changing
+      // Espere, digamos, 10 ns antes das entradas começarem a mudar
       #10;
 
-      // Add stimulus here
-      // Inputs change every 1 ns, going from 000 to 111
+      // Adicione os estímulos aqui
+      // As entradas mudam a cada 1 ns, indo de 000 até 111
       #1 {A, B, Cin} = 3'b001;
       #1 {A, B, Cin} = 3'b010;
       #1 {A, B, Cin} = 3'b011;
@@ -35,7 +35,7 @@ module halfadder_test();
       #1 {A, B, Cin} = 3'b101;
       #1 {A, B, Cin} = 3'b110;
       #1 {A, B, Cin} = 3'b111;
-      // Wait another 5 ns, and then finish simulation
+      // Espere por outros 5 ns, e então encerre a simulação
       #5 $finish;
    end
 
